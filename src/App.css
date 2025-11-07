@@ -1,0 +1,133 @@
+body {
+  margin: 0;
+  background-color: rgba(250, 250, 248, 1);
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.1),
+    0px 1px 2px 0px rgba(0, 0, 0, 0.06);
+  background-color: #ffffff;
+}
+
+.chef-claude-icon {
+  width: 43px;
+}
+header h1 {
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 55px;
+}
+
+.input-ingredient {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+main {
+  max-width: 700px;
+  margin: 50px auto;
+}
+.input-ingredient input {
+  padding: 9px 13px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+  flex-grow: 1;
+  min-width: 150px;
+  max-width: 400px;
+  font-size: 14px;
+}
+.input-ingredient button {
+  width: 183px;
+  border-radius: 6px;
+  border: none;
+  background-color: #141413;
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 150ms ease-in-out;
+}
+.input-ingredient button::before {
+  content: "+";
+  margin-right: 6px;
+}
+
+.input-ingredient button:active {
+  transform: scale(0.98);
+  background-color: #191918;
+}
+
+.ingredient-section {
+  margin-bottom: 40px;
+}
+.ingredient-section h2 {
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 35px;
+  margin: 43px 0 20px;
+  padding-left: 39px;
+}
+.ingredient-section ul {
+  font-size: 18px;
+  line-height: 28px;
+  padding-left: 58px;
+  color: #475467;
+}
+.recipe-prompt {
+  border: none;
+  background-color: #f0efeb;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 8px;
+  padding: 10px 40px;
+  margin: 0 40px 0;
+}
+.recipe-prompt h3 {
+  font-size: 18px;
+  font-weight: 590;
+  margin-bottom: 10px;
+}
+.recipe-prompt p {
+  font-size: 15px;
+  margin-top: 5px;
+  color: #6b7280;
+}
+.get-recipe-button {
+  border: none;
+  border-radius: 6px;
+  background-color: #d17557;
+  padding: 9px 16px;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  box-shadow: 0px, 1px, 2px, 0px rgba(0, 0, 0, 0.05);
+  transition: all 150ms ease-in-out;
+}
+.get-recipe-button:active {
+  transform: scale(0.98);
+  background-color: #d37b5d;
+}
+.suggested-recipe-container {
+  padding-left: 43px;
+}
+.suggested-recipe-container h2 {
+  font-size: 30px;
+  font-weight: 580;
+  line-height: 38px;
+}
+.suggested-recipe {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  color: #475467;
+}
+.suggested-recipe-container ul li,
+.suggested-recipe-container ol li {
+  margin-bottom: 7px;
+}
